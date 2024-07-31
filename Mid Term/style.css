@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+#header-1{
+    background-color:rgb(59, 63, 75);
+    width: 100%;
+    padding: 0.2rem;
+    position: static;
+}
+#header-2{
+    background-color: #000;
+    width: 100%;
+    color: #fff;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px;
+    margin-bottom: 0px;
+    position: ab;
+}
+#icon-1{
+    font-size: 30px;
+    text-align: center;
+}
+i{
+    color: #fff;
+}
+nav,ul,li{
+    list-style: none;
+    display: inline;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0 15px;
+    font-size: 22px;
+    text-transform: capitalize;
+    
+}
+#first-h1{
+    position: absolute;
+    top: 380px;
+    padding-right: 0;
+    margin-left: 25%;
+    font-size: 100px;
+    color: #fff;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#first-h4{
+    position: absolute;
+    top: 475px;
+    padding-right: 0;
+    margin-left: 28%;
+    font-size: 40px;
+    color: #fff;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+footer{
+    width: 100%;
+    background-color: #000000;
+    color: #fff;
+    box-sizing: border-box;
+    position: static;
+    bottom: 0;
+    text-align: center;
+    font-size: 22px;
+    padding: 30px 0;
+}
+#First-button{
+    position: absolute;
+    top: 600px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-left: 45%;
+    font-size: 30px;
+    border: none;
+    background-color: ivory;
+    color: black;
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+#first-img{
+    width: 100%;
+    position: static
+}
+#second-nav, #second-ul{
+        list-style: none;
+        display: inline;
+        text-decoration: none;
+        color: #ffffff;
+        padding: 0 15px;
+        font-size: 22px;
+        text-transform: capitalize;
+}
+
+
