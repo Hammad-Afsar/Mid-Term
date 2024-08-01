@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
     
 }
                 /* ------------- Downloaded Fonts -------- */
@@ -17,14 +18,32 @@
     src: url(./assets/fonts/Salsa/Salsa-Regular.ttf);
 }
 
+@font-face {
+    font-family: Advent-Pro;
+    src: url(./assets/fonts/Advent_Pro/AdventPro-VariableFont_wdth\,wght.ttf);
+}
+
                 /* --------    Header Section ------------ */
-#header-1{
+div.container {
+    width: 100%;
+    max-width: 75vw;
+    height: 100%;
+    /* background-color: yellow; */
+    /* z-index: 999; */
+    margin: auto;
+}
+
+div.full-top-items {
+    display: flex;
+    flex-flow: row nowrap;
+}
+div#header-1{
     background-color:rgb(59, 63, 75);
     width: 100%;
     padding: 0.2rem;
     position: static;
 }
-#header-2{
+header{
     background-color: #000;
     width: 100%;
     color: #fff;
@@ -36,9 +55,14 @@
     margin-bottom: 0px;
     /* position: fixed; */
 }
-#icon-1{
-    font-size: 30px;
+#full-top{
+    font-size: 10px;
+    color: #fff; 
     text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
 }
 i{
     color: #fff;
@@ -56,15 +80,13 @@ nav ul li a{
     text-transform: capitalize;
     
 }
+
 #First-button{
     position: absolute;
     top: 600px;
-    padding-right: 15px;
-    padding-left: 15px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    margin-left: 42%;
-    font-size: 30px;
+    padding: 3px 15px;
+    margin-left: 30%;
+    font-size: 28px;
     border: none;
     background-color: rgba(154, 236, 78, 0.685);
     color: black;
@@ -95,8 +117,8 @@ nav ul li a{
     position: absolute;
     top: 380px;
     padding-right: 0; 
-    margin-left: 15%;
-    text-align: center;
+    margin-left: 10%;
+    /* text-align: center; */
     font-size: 5em;
     color: #fff;
     font-family: MuseoModerno;
@@ -105,8 +127,7 @@ nav ul li a{
     text-shadow: 4px 5px 5px rgba(0, 0, 0, 0.7);
     position: absolute;
     top: 475px;
-    padding-right: 0;
-    margin-left: 35%;
+    margin-left: 20%; 
     font-size: 40px;
     color: #fff;
     font-family: Salsa;
@@ -130,7 +151,7 @@ div.main-icons {
 }
 .icons {
     display: inline-block;
-    margin: 3% 5% 3% 5%;
+    margin: 3% 5%;
     text-align: center;
     height: 15vh;
     width: 12vw;
@@ -156,25 +177,40 @@ div.main-icons {
 
 
                             /* ----------- Images Section ---------- */
+    
+div.img-container {
+    width: 20vw;
+    height: 35vh;
+    padding: 3%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    
+}
 div#image-collection {
-    /* width: 100vw; */
+    width: 100vw;
     height: 80vh;
+    /* background-color: red; */
     display: flex;
     flex-flow: row;
     align-items: center;
     justify-content: center;
     article {
-        #sentece-container {
-            width: 15vw;
+        #sentence-container {
+            /* width: 15vw;
             height: 35vh;
-            margin-left: 15%;
+            margin-left: 15%; */
             padding-top: 30%;
             text-align: center;
+            flex-flow: column wrap;
+            align-content: space-evenly;
             h2 {
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             }   
             a {
                 text-decoration: none;
+                max-width: 8vw;
+                align-self: center;
                 color: white;
                 background-color: green;
                 padding: 4%;
@@ -184,31 +220,208 @@ div#image-collection {
         }
             
     }
+
 }
-    
-div.img-sec-image {
-    width: 20vw;
-    height: 35vh;
-    padding: 3%;
+div.img-container > img {
+    width: 100%;
+    display: inline-block;
+}
+
+                /* -------------- Company LOGOS Section ------------------- */
+
+div#company-logos {
+    height: 30vh;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-around;
+    div.logos {
+        width: 13vw;
+        height: auto;
+        /* border: 1px solid black;
+        background-color: yellow; */
+        display: flex;
+        align-items: center;
+        align-content: space-around;
+    }
     img {
         width: 100%;
-        display: inline-block;
+        height: auto;
     }
+
 }
+
+
+                /*  ------------------ Registration Area ------------------- */
+
+div#register-area {
+    background-color: bisque;
+    height: 20vh;
+    width: 100%;
+    position: relative;
+    /* display: flex;
+    flex-flow: row nowrap; */
+    div.container > div {
+        display: flex;
+        flex-flow: row nowrap;
+        height: 100%;
+        width: auto;
+    }
+    .register-area-text {
+        /* border: 1px solid black; */
+        height: 100%;
+        width: 50%;
+        
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        justify-content: center;
+        h1 {
+            font-size: 3em;
+            font-family: Advent-Pro;
+        }
+        p {
+            font-size: 1.5em;
+        }
+    }
+    .register-area-email {
+        /* border: 1px solid black; */
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+
+        input[type="email"] {
+            flex-grow: 0.5;
+            height: 4vh;
+            margin: 0;
+            padding: 1%;
+            font-size: 1.2em;
+            
+        }
+
+        input[type="submit"] {
+            background-color: rgb(91, 139, 19);
+            border: none;
+            color: white;
+            height: 4vh;
+            margin: 0;
+            padding: 1%;
+        }
+        input[type="submit"]:hover {
+            background-color: rgba(9, 136, 36, 0.788);
+            cursor: pointer;
+        }
+
+    }
+    div#circle {
+        background-color: rgb(91, 139, 19);
+        width: 3vw;
+        height: 3vw;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        top: 18vh;
+        display: flex;
+        align-items: center;
+    }
+
+    
+}
+
+button:hover {
+    background-color: azure;
+}
+
+
                         
 
                /* -------------------- Footer section ---------------------- */
 
+               /* ----------------------- footer links --------------------- */
+
+div#footer-links {
+    width: 100%;
+    height: 40vh;
+    /* background-color: red; */
+}
+div#links-container {
+    /* background-color: green; */
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+
+}
+div.links-group {
+    /* border: 1px solid black; */
+    width: 15vw;
+    height: 65%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: baseline;
+    padding: 1%;
+    h4 {
+        padding-bottom: 4%;
+    }
+    
+    ul {
+        display: flex;
+        flex-flow: column wrap;
+        list-style: none;
+    }
+    a {
+        color: black;
+    }
+    
+    
+}
+div#special {
+    flex-grow: 0.8;
+}
+div#footer-cover-right {
+    /* border: 1px solid black; */
+    width: 75%;
+    height: 60%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+div#footer-icons-right {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: flex-start;
+    /* border: 2px solid black; */
+
+}
+#icon-1 {
+    margin-top: 4rem;
+    font-size: 1.4em;
+}
+div#footer-text-right {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    align-content: space-around;
+    /* border: 2px solid black; */
+}
 
 footer{
     width: 100%;
-    background-color: #000000;
-    color: #fff;
+    /* background-color: #000000; */
+    color: #000;
     box-sizing: border-box;
     position: static;
     bottom: 0;
     text-align: center;
-    font-size: 22px;
+    font-size: 1em;
     padding: 30px 0;
 }
 
