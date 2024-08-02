@@ -1,75 +1,13 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.container{
-    width: 90%;
-    height: 100%;
-    margin: auto;
-    box-sizing: border-box;
-    align-items: center;
-    justify-content: space-between;
-
-}
-
-nav ul li{
-    list-style: none;
-    display: inline;
-}
-nav ul li a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
-    color: #ffffff;
-    padding: 0 15px;
-    font-size: 22px;
-    text-transform: capitalize;
     
 }
+                /* ------------- Downloaded Fonts -------- */
 
-#first-h1{
-    position: absolute;
-    text-align: center;
-    top: 300px;
-    padding-right: 0;
-    margin-left: 28%;
-    margin-right: 28%;
-    font-size: 80px;
-    color: #fff;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      
-}
-#first-h4{
-    position: absolute;
-    text-align: center;
-    top: 400px;
-    padding-right: 0;
-    margin-left: 32%;
-    margin-right: 32%;
-    font-size: 30px;
-    color: #fff;
-}
-#second-img{
-    position: static;
-    width: 100%;
-}
-#first-button{
-    position: absolute;
-    top: 480px;
-    padding-right: 15px;
-    padding-left: 15px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    margin-left: 40%;
-    margin-right: 40%;
-    font-size: 30px;
-    border: none;
-    background-color: ivory;
-    color: black;
-    border-radius: 15px;
-    text-transform: uppercase;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode',
-}
 @font-face {
     font-family: MuseoModerno;
     src: url(./assets/fonts/MuseoModerno/MuseoModerno-VariableFont_wght.ttf);
@@ -79,6 +17,124 @@ nav ul li a{
     font-family: Salsa;
     src: url(./assets/fonts/Salsa/Salsa-Regular.ttf);
 }
+
+@font-face {
+    font-family: Advent-Pro;
+    src: url(./assets/fonts/Advent_Pro/AdventPro-VariableFont_wdth\,wght.ttf);
+}
+
+                /* --------    Header Section ------------ */
+div.container {
+    width: 100%;
+    max-width: 75vw;
+    height: 100%;
+    /* background-color: yellow; */
+    /* z-index: 999; */
+    margin: auto;
+}
+
+div.full-top-items {
+    display: flex;
+    flex-flow: row nowrap;
+}
+div#header-1{
+    background-color:rgb(59, 63, 75);
+    width: 100%;
+    padding: 0.2rem;
+    position: static;
+}
+header{
+    background-color: #000;
+    width: 100%;
+    color: #fff;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px;
+    margin-bottom: 0px;
+    /* position: fixed; */
+}
+#full-top{
+    font-size: 10px;
+    color: #fff; 
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+i{
+    color: #fff;
+}
+nav,ul,li{
+    list-style: none;
+    display: inline;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0 15px;
+    font-size: 22px;
+    text-transform: capitalize;
+    
+}
+
+#First-button{
+    position: absolute;
+    top: 600px;
+    padding: 3px 15px;
+    margin-left: 30%;
+    font-size: 28px;
+    border: none;
+    background-color: rgba(154, 236, 78, 0.685);
+    color: black;
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+#First-button:hover {
+    cursor: pointer;
+}
+#first-img{
+    width: 100%;
+    position: static;
+    
+}
+#second-nav, #second-ul{
+    list-style: none;
+    display: inline;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0 15px;
+    font-size: 22px;
+    text-transform: capitalize;
+}
+#first-h1{
+    text-shadow: 4px 5px 5px rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 380px;
+    padding-right: 0; 
+    margin-left: 10%;
+    /* text-align: center; */
+    font-size: 5em;
+    color: #fff;
+    font-family: MuseoModerno;
+}
+#first-h4{
+    text-shadow: 4px 5px 5px rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 475px;
+    margin-left: 20%; 
+    font-size: 40px;
+    color: #fff;
+    font-family: Salsa;
+}
+
+            /* ------------   Icons SEction  --------------------------*/
+
 div#main-icons-wrapper {
     display: flex;
     flex-flow: row;
@@ -95,7 +151,7 @@ div.main-icons {
 }
 .icons {
     display: inline-block;
-    margin: 3% 5% 3% 5%;
+    margin: 3% 5%;
     text-align: center;
     height: 15vh;
     width: 12vw;
@@ -121,25 +177,40 @@ div.main-icons {
 
 
                             /* ----------- Images Section ---------- */
+    
+div.img-container {
+    width: 20vw;
+    height: 35vh;
+    padding: 3%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    
+}
 div#image-collection {
-    /* width: 100vw; */
+    width: 100vw;
     height: 80vh;
+    /* background-color: red; */
     display: flex;
     flex-flow: row;
     align-items: center;
     justify-content: center;
     article {
-        #sentece-container {
-            width: 15vw;
+        #sentence-container {
+            /* width: 15vw;
             height: 35vh;
-            margin-left: 15%;
+            margin-left: 15%; */
             padding-top: 30%;
             text-align: center;
+            flex-flow: column wrap;
+            align-content: space-evenly;
             h2 {
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             }   
             a {
                 text-decoration: none;
+                max-width: 8vw;
+                align-self: center;
                 color: white;
                 background-color: green;
                 padding: 4%;
@@ -149,18 +220,14 @@ div#image-collection {
         }
             
     }
+
 }
-    
-div.img-sec-image {
-    width: 20vw;
-    height: 35vh;
-    padding: 3%;
-    img {
-        width: 100%;
-        display: inline-block;
-    }
+div.img-container > img {
+    width: 100%;
+    display: inline-block;
 }
-                     /* -------------- Company LOGOS Section ------------------- */
+
+                /* -------------- Company LOGOS Section ------------------- */
 
 div#company-logos {
     height: 30vh;
@@ -284,7 +351,7 @@ div#footer-links {
 div#links-container {
     /* background-color: green; */
     display: flex;
-    flex-flow: wrap;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: space-around;
 
@@ -294,18 +361,17 @@ div.links-group {
     width: 15vw;
     height: 65%;
     display: flex;
-    flex-flow: wrap;
+    flex-flow: column wrap;
     align-items: flex-start;
     justify-content: baseline;
     padding: 1%;
-}
     h4 {
-        padding-bottom: 6%;
+        padding-bottom: 4%;
     }
     
     ul {
         display: flex;
-        flex-flow: wrap;
+        flex-flow: column wrap;
         list-style: none;
     }
     a {
@@ -313,7 +379,7 @@ div.links-group {
     }
     
     
-
+}
 div#special {
     flex-grow: 0.8;
 }
@@ -322,10 +388,9 @@ div#footer-cover-right {
     width: 75%;
     height: 60%;
     display: flex;
-    flex-flow: nowrap;
+    flex-flow: row nowrap;
     align-items: center;
-    justify-content: space-evenly;
-    padding: 30px;
+    justify-content: space-between;
 }
 div#footer-icons-right {
     display: flex;
@@ -351,8 +416,7 @@ div#footer-text-right {
 footer{
     width: 100%;
     /* background-color: #000000; */
-    color: #ffffff;
-    background-color: #000;
+    color: #000;
     box-sizing: border-box;
     position: static;
     bottom: 0;
@@ -360,3 +424,6 @@ footer{
     font-size: 1em;
     padding: 30px 0;
 }
+
+
+
