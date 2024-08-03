@@ -463,7 +463,7 @@ footer{
     margin-top: 2%;
 }
 .Satisfied-Costumer > img{
-    margin-left: 33%;
+    margin-left: 28%;
 }
 .Satisfied-Costumer > h5, p{
     text-align: center;
@@ -503,6 +503,23 @@ footer{
 }
 .container > #p{
     text-align: center;
+}
+.Satisfied-Costumer > .Hammad-tag {
+
+    box-shadow: 1px;
+    margin-right: 0;
+    margin-left: 135px;
+    margin-bottom: 60%;
+    margin-top: -3%;
+    position: absolute;
+    
+}
+.Satisfied-Costumer > .Hammad-tag > img {
+    border-radius: 50%;
+    padding: 0.2rem;
+    rotate: 180deg;
+    background-color: #fff;
+
 }
 
 
