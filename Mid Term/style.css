@@ -22,6 +22,10 @@
     font-family: Advent-Pro;
     src: url(./assets/fonts/Advent_Pro/AdventPro-VariableFont_wdth\,wght.ttf);
 }
+body {
+    min-height: 100%;
+    max-width: 100vw;
+}
 
                 /* --------    Header Section ------------ */
 div.container {
