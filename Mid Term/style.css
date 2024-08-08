@@ -28,9 +28,9 @@ body {
 }
 
                 /* --------    Header Section ------------ */
-div.container {
+.container {
     width: 100%;
-    max-width: 75vw;
+    max-width: 70vw;
     height: 100%;
     /* background-color: yellow; */
     /* z-index: 999; */
@@ -83,6 +83,9 @@ nav ul li a{
     font-size: 22px;
     text-transform: capitalize;
     
+}
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 #First-button{
@@ -149,16 +152,22 @@ div#main-icons-wrapper {
 div.main-icons {
     background-color: rgba(0, 225, 255, 0.822);
     display: inline-block;
-    padding: 5px;
+    padding: 10px;
     border-radius: 50%;
     text-align: center;
 }
 .icons {
     display: inline-block;
-    margin: 3% 5%;
+    margin: 8% 2%;
     text-align: center;
-    height: 15vh;
-    width: 12vw;
+    height: 5vh;
+    width: 20vw;
+    font-size: 0.8em;
+    p {
+        font-family: Salsa;
+        font-weight: lighter;
+        font-size: 0.8em;
+    }
 }
  
 #truck {
@@ -253,7 +262,128 @@ div.tag {
     bottom: 0;
     left: 0;
 }
+               /* ------------------ Products section --------------- */
 
+.products {
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    max-width: 100%;
+    padding: 1%;
+}
+.items {
+    padding: 2em;
+}
+
+
+div.product {  
+    width: 13vw;
+    height: 30vh;
+    box-shadow: 2px 3px rgba(0, 0, 0, 0.1);
+    /* border: 1px solid black; */
+    /* background-color: blue; */
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    .price-tag {
+        color: white;
+        background-color: rgb(10 174 24);
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 1%;
+    }
+
+}
+.product-image {
+    width: 10vw;
+    height: 15vh;
+    background-color: #333;
+
+}
+
+
+
+.product-price {
+    font-size: 1em;
+    color: #555;
+    margin: 5px 0;
+}
+
+.product-tagline {
+    font-size: 0.9em;
+    color: #777;
+    margin: 5px 0;
+}
+
+
+                    /* --------- Mid Image Section--------------- */
+
+section.mid-img {
+    margin: 8em 0em;
+    aspect-ratio: 3/2;
+    width: 100%;
+    height: 65vh;
+    background-image: url(./assets/images/pen-4337524_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .mid-img-container {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+    div.space {
+        /* background-color: green; */
+        /* border: 1px solid black; */
+        width: 60%;
+        height: 100%;
+    }
+    .deal-text {
+        /* background-color: green; */
+        /* border: 1px solid black; */
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 1em 1em;
+        color: white;
+        text-shadow: 3px 2px 5px black;
+        p {
+            text-align: left;
+            font-family: Salsa;
+            font-weight: 50;
+        }
+        h1 {
+            font-family: Advent-Pro;
+            font-size: 2em;
+        }
+        h3 {
+            font-size: 1.5em;
+            font-family: Salsa;
+            font-weight: 200;
+        }
+    }
+    div#time {
+        /* background-color: yellow; */
+        width: 50%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 1em;
+    }
+
+
+}
 
                     /* ------------- Satisfied Customers Section -------------------- */
 
@@ -489,6 +619,7 @@ button:hover {
 
 div#footer-links {
     width: 100%;
+    /* margin: ; */
     height: 40vh;
     /* background-color: red; */
 }
@@ -498,11 +629,23 @@ div#links-container {
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-around;
+    #faq {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        /* background-color: gray; */
+        height: 15vh;
+        margin-right: 2em;
+        margin-left: 0px;
+        gap: 1em;
+    }
+
 
 }
 div.links-group {
     /* border: 1px solid black; */
-    width: 15vw;
+    width: 13vw;
     height: 65%;
     display: flex;
     flex-flow: column wrap;
@@ -526,11 +669,13 @@ div.links-group {
 }
 div#special {
     flex-grow: 0.8;
+   
 }
 div#footer-cover-right {
     /* border: 1px solid black; */
     width: 75%;
     height: 60%;
+    gap: 2em;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -571,262 +716,11 @@ footer{
 /* satisfied ccstumer section */ 
 
 
- /* OUR EXCLUSIVE PRODUCTS INFO css  */
-  
- *body {
-    margin: 0;
-    padding: 0;
-    background-color: white;
-    font-family: Arial, sans-serif;
-}
+ 
 
-.text-container {
-    background-color: white;
-    color: black;
-    padding: 20px;
-    text-align: center;
-    width: 100%;
-    margin: 50px auto;
-}
 
-.text-container h1 {
-    font-size: 1.5em;
-    font-weight: bold;
-}
 
-/* User Rating Styles */
-.top-rated-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    align-items: center;
-    padding: 20px;
-}
 
-.user-rating {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 3rem;
-    width: 300px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.user-image {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    margin-right: 20px;
-}
-
-.user-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.user-name {
-    font-size: 18px;
-    font-weight: bold;
-    color: #000;
-}
-
-.user-time {
-    font-size: 12px;
-    color: #888;
-    margin: 5px 0;
-}
-
-.user-comment {
-    font-size: 14px;
-    color: #333;
-    margin: 10px 0;
-}
-
-.like-heart {
-    cursor: pointer;
-    font-size: 20px;
-    color: #888;
-    transition: color 0.3s;
-}
-
-.like-heart.liked {
-    color: red;
-}
-
-/* Exclusive Products Styles */
-.container {
-    width: 100%;
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-.main-title {
-    font-size: 2.5em;
-    font-weight: bold;
-    margin: 0;
-}
-
-.products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
-}
-
-.product {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin: 10px;
-    padding: 20px;
-    width: 200px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.product-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.product-name {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin: 10px 0;
-}
-
-.product-price {
-    font-size: 1em;
-    color: #555;
-    margin: 5px 0;
-}
-
-.product-tagline {
-    font-size: 0.9em;
-    color: #777;
-    margin: 5px 0;
-}
-/* Reviews Section Styles */
-.reviews {
-    margin: 20px 0;
-}
-
-.review-form {
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
-.review-form label {
-    display: block;
-    margin: 10px 0 5px;
-}
-
-.review-form input,
-.review-form select,
-.review-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.review-form button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.review-form button:hover {
-    background-color: #0056b3;
-}
-
-.reviews-list {
-    list-style: none;
-    padding: 0;
-}
-
-.review {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.review .rating {
-    font-weight: bold;
-    color: #ffcc00; /* Gold color for stars */
-}
-
-.review .comment {
-    margin-top: 5px;
-}
-  /* Product Comparison Styles */
-  .comparison {
-    margin: 20px 0;
-}
-
-.comparison p {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-.product {
-    display: inline-block;
-    width: 200px;
-    margin: 10px;
-    text-align: center;
-}
-
-.compare-checkbox {
-    display: block;
-    margin-bottom: 10px;
-}
-
-.comparison-table {
-    border-collapse: collapse;
-    width: 100%;
-    margin-top: 20px;
-}
-
-.comparison-table table {
-    width: 100%;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.comparison-table th,
-.comparison-table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
-}
-
-.comparison-table th {
-    background-color: #f4f4f4;
-    font-weight: bold;
-}
-
-.comparison-table img {
-    max-width: 100px;
-    height: auto;
-}
  
 
 
